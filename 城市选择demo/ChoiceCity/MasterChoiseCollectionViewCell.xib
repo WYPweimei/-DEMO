@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MasterChoiseCollectionViewCell" id="gTV-IL-0wX" customClass="MasterChoiseCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="117" height="70"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="117" height="70"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="cell" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZmU-p1-BUF">
+                        <rect key="frame" x="8" y="8" width="101" height="54"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="photoChoice" translatesAutoresizingMaskIntoConstraints="NO" id="Sog-8I-SYp">
+                        <rect key="frame" x="97" y="0.0" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="ii7-h4-e3Z"/>
+                            <constraint firstAttribute="width" secondItem="Sog-8I-SYp" secondAttribute="height" multiplier="1:1" id="tpS-sc-E07"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="ZmU-p1-BUF" secondAttribute="bottom" constant="8" id="3Gh-nV-KdH"/>
+                <constraint firstItem="Sog-8I-SYp" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="7GW-je-I0k"/>
+                <constraint firstItem="ZmU-p1-BUF" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="eg2-Zm-Sgl"/>
+                <constraint firstAttribute="trailing" secondItem="Sog-8I-SYp" secondAttribute="trailing" id="jYm-gS-r1k"/>
+                <constraint firstItem="ZmU-p1-BUF" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="8" id="tzS-tZ-szm"/>
+                <constraint firstAttribute="trailing" secondItem="ZmU-p1-BUF" secondAttribute="trailing" constant="8" id="usf-tE-SYd"/>
+            </constraints>
+            <size key="customSize" width="117" height="70"/>
+            <connections>
+                <outlet property="selectedView" destination="Sog-8I-SYp" id="YrH-Wr-ftE"/>
+                <outlet property="textLabel" destination="ZmU-p1-BUF" id="NDH-WS-WEl"/>
+            </connections>
+            <point key="canvasLocation" x="318.5" y="334"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="photoChoice" width="25" height="25"/>
+    </resources>
+</document>

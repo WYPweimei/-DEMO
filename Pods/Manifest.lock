@@ -1,0 +1,27 @@
+PODS:
+  - FMDB (2.6.2):
+    - FMDB/standard (= 2.6.2)
+  - FMDB/SQLCipher (2.6.2):
+    - SQLCipher
+  - FMDB/standard (2.6.2)
+  - FMDBRuntimeNew (3.0.2):
+    - FMDB (~> 2.5)
+  - SQLCipher (3.1.0):
+    - SQLCipher/standard (= 3.1.0)
+  - SQLCipher/common (3.1.0)
+  - SQLCipher/standard (3.1.0):
+    - SQLCipher/common
+  - YYModel (1.0.4)
+
+DEPENDENCIES:
+  - FMDB/SQLCipher
+  - FMDBRuntimeNew (~> 3.0.2)
+  - YYModel (~> 1.0.4)
+
+SPEC CHECKSUMS:
+  FMDB: 854a0341b4726e53276f2a8996f06f1b80f9259a
+  FMDBRuntimeNew: 90fba8ea87cf59098cd1eb7c644f4d70d1e49a75
+  SQLCipher: 4684434d5791db86512cd7e02172aefba575849e
+  YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
+
+COCOAPODS: 0.39.0
